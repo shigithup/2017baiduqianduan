@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task33doc</title>
+	<link rel="stylesheet" href="css33.css">
+</head>
+<body>
+    <header>
+    	<h1>三栏自适应布局的实现方法</h1>
+    </header>
+	<div id="content">
+
+		<div class="center">
+		    <div id="c-inner">			
+		    <h3>实现方法一</h3>
+			<p><b>实现方法</b>：<br />
+				在html里的顺序：橙色盒子--我的照片div---个人logodiv。 <br />
+				1.橙色盒子里的内容盒子左右加margin，为左右两栏让出空间（注意：如果橙色盒子不加width：100%那么，当文字较少时，便无法撑起盒子的横排空间，会出现意外）<br />
+				2. 左边的我的照片div用margin：-100%;其左边刚好与橙色盒子重合。<br>
+				3.右边盒子margin:-盒子本身的宽度；<br>
+				本方法的一个技巧在于对橙色盒子的内容再加一个盒子，以便让出空间。
+			<br /></p>
+		</div>
+
+		</div>
+		<div class="t-left">
+			<img src="team.png" alt="抱歉，由于未知原因，此位置的图片未能显示"    />
+			<div class="textp">我的照片 </div>
+		</div>
+
+		<div class="t-right">
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+		</div>
+	</div>
+
+
+
+
+	<div id="contentsec">
+		<div class="t-leftsec">
+			<img src="team.png" alt="抱歉，由于未知原因，此位置的图片未能显示"    />
+			<div class="textpsec">我的照片 </div>
+			 
+		</div>
+		<div class="centersec">
+		    <div id="c-innersec">			
+		    <p>希望可以通过自己敲代码改善自己生活的人。</p>
+		    <h3>实现方法二</h3>
+			<p><b>实现方法</b>：<br />
+				在html里的顺序：我的照片div---橙色盒子--个人logodiv。 <br />
+				1.橙色盒子里的内容盒子左右加margin，为左右两栏让出空间（注意：如果橙色盒子不加width：100%那么，当文字较少时，便无法撑起盒子的横排空间，会出现意外）<br />
+				2. 左边的我的照片div用绝对定位<br>
+				3.右边盒子也用绝对定位<br>
+				4.元素框偏移某个距离。元素仍保持其未定位前的形状，它原本所占的空间仍保留,也就是说后面的元素无法紧跟上一相邻元素进行移动，因为上一元素原本所占空间仍然保留。<br />
+				 然而左边的图标并不能完全撑起盒子，共四个logo却只显示出三个。所以很有弊端，这种绝对定位的做法比较死板，牵一发而动全身，而且如果非自适应的栏高度超过自适应的栏高度，并不能撑开底下的footer，谁叫他是绝对定位呢。
+			<br /></p>
+		</div>
+
+		</div>
+		<div class="t-rightsec">
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+		</div>
+	</div>
+
+
+
+
+
+
+	<div id="contentthree">
+		<div class="t-leftthree">
+			<img src="team.png" alt="抱歉，由于未知原因，此位置的图片未能显示"    />
+			<div class="textpthree">我的照片 </div>
+		</div>
+	 
+		    <div id="c-innerthree">			
+		    <h3>实现方法三</h3>
+			<p><b>实现方法</b>：<br />
+				在html里的顺序： 我的照片div---实现方法---个人logodiv。 <br />
+				1.橙色盒子里的内容盒子左右加margin，为左右两栏让出空间 <br />
+				与方法二不同的是，没有float :left;通过绝对定位与相对定位实现。至于弊端仍然相同，可看出右侧logo并未完全显出。
+
+			<br /></p>
+		 
+
+		</div>
+
+		<div class="t-rightthree">
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+		</div>
+
+	</div>
+
+
+ 
+
+<div id="contentfour">
+
+		 
+		    <div id="c-innerfour">			
+		    <h3>实现方法四</h3>
+			<p><b>实现方法</b>：<br />
+				在html里的顺序：橙色盒子--我的照片div---个人logodiv。 <br />
+				1.包含三个盒子的容器里的内容盒子左右加padding，为左右两栏让出空间 <br />
+				2.  left center right三个div{float:left ;postion:relative;margin:---;left:---}<br>
+				 
+			<br /></p>
+		</div>
+
+	 
+		<div class="t-leftfour">
+			<img src="team.png" alt="抱歉，由于未知原因，此位置的图片未能显示"    />
+			<div class="textpfour">我的照片 </div>
+		</div>
+
+		<div class="t-rightfour">
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+			<img src="32.png" alt=""  />
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>

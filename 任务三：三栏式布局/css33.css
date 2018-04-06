@@ -1,0 +1,202 @@
+#content{
+	background-color: #eee;
+	border:1px solid #999 ;
+	padding: 20px;
+	width: 97%;
+	overflow: hidden;
+}
+/* #content:after {clear:both; content:' '; display:table; }
+ */
+.t-left, .t-right, .center{
+	float: left;
+	background-color: white;
+}
+.center{
+	background-color: orange;
+	width: 100%;    /* 注意  如果.center不加width：100%那么，当文字较少时，便无法撑起盒子的横排空间，会出现意外*/
+}
+#c-inner{
+	margin:  0  210px;
+	background-color: white;
+
+}
+.t-left{
+	margin-left: -100%;
+	width: 200px;
+	 
+
+}
+.t-left img{
+	width: 120px;
+	height: 192px;
+}
+.t-right img{
+	width: 80px;
+	height: 80px;
+	margin:  10px 0;
+}
+.t-right{
+	width: 120px ;
+	margin-left: -120px;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+#contentsec{
+	margin-top: 30px;
+	background-color: #eee;
+	border:1px solid #999 ;
+	padding: 20px;
+	width: 97%;
+	overflow: hidden;
+	position:relative; 
+}
+.t-leftsec, .t-rightsec, .centersec{
+	float: left;
+	background-color: white;
+}
+.centersec{
+	background-color: orange;
+	width: 100%;    
+}
+#c-innersec{
+	margin:  0  210px;
+	background-color: white;
+
+}
+.t-leftsec{
+	position: absolute;
+	width: 200px;
+	 
+
+}
+.t-leftsec img{
+	width: 120px;
+	height: 192px;
+}
+.t-rightsec img{
+	width: 80px;
+	height: 80px;
+	margin:  10px 0;
+}
+.t-rightsec{
+	position: absolute;
+	right: 20px;
+	width: 120px ;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+#contentthree{
+	background-color: #eee;
+	border:1px solid #999 ;
+	 
+	margin-top: 30px;
+	position: relative;
+}
+/* #content:after {clear:both; content:' '; display:table; }
+ */
+.t-leftthree, .t-rightthree {
+	 
+	background-color: white;
+}
+/* .centerthree{
+	background-color: orange;
+	width: 100%;     注意  如果.center不加width：100%那么，当文字较少时，便无法撑起盒子的横排空间，会出现意外
+} */
+#c-innerthree{
+	margin:  0  210px;
+	background-color: white;
+	position: relative;
+	top:0px ;
+
+}
+#c-innerthree h3{
+	margin:0px ;
+}
+.t-leftthree{
+	 
+	width: 200px;
+	 top: 20px;
+	 position: absolute;
+
+}
+.t-leftthree img{
+	width: 120px;
+	height: 192px;
+}
+.t-rightthree img{
+	width: 80px;
+	height: 80px;
+	margin:  10px 0;
+}
+.t-rightthree{
+	top: 20px;
+	right: 20px;
+	position: absolute;
+	width: 120px ;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+#contentfour{
+	background-color: #eee;
+	border:1px solid red; 
+	padding: 0  200px;
+	margin-top: 330px;
+	overflow: hidden;
+}
+/* #content:after {clear:both; content:' '; display:table; }
+ */
+.t-leftfour, .t-rightfour, #c-innerfour{
+	 
+	background-color: white;
+	float: left;
+	 position: relative;
+}
+ 
+#c-innerfour{
+	  width: 100%;
+	  background-color:orange;
+
+}
+.t-leftfour{
+	width: 200px;
+	left: -200px;
+	margin-left: -100%;
+
+}
+.t-leftfour img{
+	width: 120px;
+	height: 192px;
+}
+.t-rightfour img{
+	width: 80px;
+	height: 80px;
+	margin:  10px 0;
+}
+.t-rightfour{
+	width: 120px ;
+	right: -120px;
+	margin-left: -120px;
+	text-align: center;
+}
