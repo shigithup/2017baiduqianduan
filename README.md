@@ -1,6 +1,6 @@
-# 任务四知识点总结
-## 水平垂直居中
-###  方法一：
+### 任务四知识点总结
+#### 水平垂直居中
+#####  方法一：
 	.box {
 		width: 400px;
 		height: 200px;
@@ -12,7 +12,7 @@
 		bottom:0;
 		right:0;
 	} 
-### 方法二：引入transform
+##### 方法二：引入transform
 	.box {
 		width: 400px;
 		height: 200px;
@@ -22,7 +22,7 @@
 		left:50%;
 		top:50%;
 		transform: translate(-200px, -100px )    /* 宽高的1/2，另外可用transform: translate(-50%, -50%)替换，效果是一样的*/
-### 方法三：与方法二相比用margin取代transform
+##### 方法三：与方法二相比用margin取代transform
 	.box {
 		width: 400px;
 		height: 200px;
@@ -34,7 +34,7 @@
 		margin-top:-100px;
 	}
 
-###  方法四：弹性布局Flex
+#####  方法四：弹性布局Flex
 	以下放在所要居中的div父元素中，父元素必须有高度
 	divpare  {
 		height: 800px;
@@ -42,7 +42,7 @@
 		justify-content: center;
     	align-items: center;
 	}
-## 水平居中
+#### 水平居中
 参照水平垂直居中：
 
 	margin：0 auto；
