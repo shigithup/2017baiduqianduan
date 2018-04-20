@@ -203,7 +203,7 @@
 	#hh{width:500px; text-align: center;background-color: grey;}
 	#ff{  width:100px; position: absolute; top: 0; left: 0; }
 
-![mark](http://myphoto.shigaozhen.cn/myselfhexo/20180420/100605391.png)
+ 
 
 当对`#hh`添加`text-indent:100px`时,盒子ff的文字会一起移动;
 
@@ -217,8 +217,7 @@
 	#hh:hover{ text-indent: 1000px;}
 	#ff{ width: 500px;  position: absolute; top: 8px; left: 8px; }
 	#ff:hover{text-align: center; color:yellow}
-
-![mark](http://myphoto.shigaozhen.cn/myselfhexo/20180420/112151637.png)
+ 
 
 对#ff:hover添加`background-color:red`
 
@@ -229,7 +228,7 @@
 
 ![mark](http://myphoto.shigaozhen.cn/myselfhexo/20180420/174030034.png)
 
-![mark](http://myphoto.shigaozhen.cn/myselfhexo/20180420/174154937.png)
+ 
 
 	<ul id="one">
 	 	<li><a href="">Home</a></li>
