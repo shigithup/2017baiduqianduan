@@ -1,0 +1,140 @@
+.banner {
+	height : 56px;
+}
+.b_logo{
+	line-height: 56px;
+	margin-left: 60px;
+	width: 100px;
+	float: left;
+}
+.b_logo h3{
+	display: inline-block;
+	margin: 0px;
+	color: black;
+	background: url('logo.png') no-repeat  0 10px ;
+	text-indent: 38px;
+}
+.b_logo a{
+	text-decoration: none;
+}
+
+.b_nav{
+	float: right;
+	margin-right: 67px;
+}
+.b_nav ul li{
+	list-style:   none;
+	float: left;
+	margin-left: 19px;
+}
+.b_nav ul li a {
+	text-decoration: none;
+	color: #9D9EA3;
+	padding: 0  9px  13px  15px;
+
+}
+.b_nav ul li a:hover{
+
+	border-bottom: 4px  solid  #E84F51 ;
+}
+.b_nav ul li a:focus {
+	color: #E84F51;
+	border-bottom: 4px  solid  #E84F51 ;
+
+}
+.b_nav ul li:last-child  a{
+	background: url('logoin.png') no-repeat 3px 4px;
+	padding-left: 23px;
+	color: #E84F51;
+}
+
+
+
+
+.section_one{
+	position: relative;
+}
+.sec_img img{
+	 width: 100%;
+	 }
+.sec_text{
+	position: absolute;
+	top: 235px;
+	left: 115px;
+}
+.sec_text h1{
+	margin-bottom: 0;
+	font-size: 56px;
+	color: #fff;
+	font-weight: normal;
+}
+.sec_text p{
+	margin-top: 0;
+	color: #fff;
+	font-size: 21px;
+}
+.start_ex{
+	width: 332px;
+	height: 60px;
+	margin-top: 67px;
+	background-color: 	#ff6666;
+	text-align: center;
+	line-height: 60px;
+	font-size: 26px;
+	letter-spacing: 3px;
+
+}
+
+.start_ex a{
+	text-decoration: none;
+	color: #fff;
+}
+.secone_bottom{
+	overflow: hidden;
+}
+.secoall{
+	width: 325px;
+	height: 249px;
+	 
+	float: left;
+	 
+
+}
+.secoall a{
+	display: inline-block;
+	margin: 44px 0 20px 147px;
+}
+ .secoall img:hover {
+	 
+	border-bottom: 2px  solid  #E84F51 ;
+}
+.secoall img{
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.secoall p{
+	text-align: center;
+	border-right: 2px solid  #999;
+	padding-bottom: 15px;
+}
+#squar p:last-child{
+	border: 0;
+}
+
+
+
+.sect_about {
+
+	height: 270px;
+	background-color: #DEDEDE;
+	text-align: center;
+	padding-top: 90px;
+	font-size: 60px;
+}
+.sect_about p{
+	color: #A1A1A1;
+	margin-top: 12px;
+}
+
+
+
