@@ -123,9 +123,15 @@
 
 
 
+
+.section_two{
+	background: url('看地图.png')  no-repeat;
+	background-size: 100% 951px;
+	height: 951px;
+}
 .sect_about {
 
-	height: 270px;
+	height: 296px;
 	background-color: #DEDEDE;
 	text-align: center;
 	padding-top: 90px;
@@ -136,5 +142,29 @@
 	margin-top: 12px;
 }
 
+.sec_city_sea{
+	 text-align: center;
+	 color: #fff;
+	 margin-top: 54px;
+}
 
+.sec_city_sea a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 22px;
 
+}
+.sec_city_sea a span{
+	padding-bottom: 3px;
+	display: inline-block;
+	padding: 0 5px 3px 5px;
+	margin: 0 -5px;
+	border-bottom: 2px #fff solid;
+}
+.sec_city_sea a:hover span{
+	 padding: 0 110px 3px 110px;
+	 margin: 0 -110px;
+}
+.sec_city_sea p{
+	font-size: 13px;
+}
