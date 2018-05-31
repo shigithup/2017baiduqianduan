@@ -166,7 +166,7 @@ var button=document.getElementById("confirm_button");
 </html>
 ```
 
-其他方法参考：
+其他方法参考：[用原生实现点击删除点击的l](https://www.jianshu.com/p/09e94f89af9a)
 
 [用原生实现点击删除点击的li]: https://www.jianshu.com/p/09e94f89af9a
 
