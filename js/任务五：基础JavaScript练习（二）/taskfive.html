@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>taskfour</title>
+	<style type="text/css">
+    #right_in{
+    	margin-right: 20px;
+    }
+     ul{
+        list-style: none;
+    }
+     li{
+        background-color: red;
+        display:inline-block;
+        width:20px;
+        padding:10px;
+        margin-left:3px;
+        color:white;
+        vertical-align: bottom;
+    }
+    </style>
+</head>
+<body>
+	
+	<div id="button">
+		<input type="text" id="input_num" />
+		<button type="button" id='left_in' >左侧入</button>
+		<button type="button" id='right_in')">右侧入</button>
+		<button type="button" id='left_out')">左侧出</button>
+		<button type="button" id='right_out')">右侧出</button>
+		<button type="button" id='button_sort')">重排序</button>
+    </div>
+    <ul id="num_wrap">
+
+    </ul>
+    <script>
+    window.onload = function () {
+    		// body...
+    	var numre= document.getElementById('input_num');
+    	var numul =document.getElementById('num_wrap');
+    	var re_sort=document.getElementById('button_sort');
+    	
+		//左侧入
+		document.getElementById('left_in').onclick= function(){
+			if((!/^[0-9]*$/.test(numre.value)||numre.value=="")||(100<numre.value||numre.value<10)){
+                alert("请输入有效的数字");
+			}
+            else{
+				var addli= document.createElement('li');
+				var addnum= document.createTextNode(numre.value);
+				addli.appendChild(addnum);
+				numul.insertBefore(addli,numul.firstElementChild);
+				addli.style.height=numre.value+'px';
+				numre.value="";
+				if (numul.children.length>60) {
+					alert('您添加的元素已经超过60个');
+					numul.removeChild(addli);
+				}
+
+			}
+
+
+		};
+
+    	//右侧入
+
+    	document.getElementById("right_in").onclick=function insertNum() {
+			if((!/^[0-9]*$/.test(numre.value)||numre.value=="")||(100<numre.value||numre.value<10)){
+                alert("请输入有效的数字");
+			}
+            else{
+				var addli =document.createElement('li');
+				var addnum= document.createTextNode(numre.value);
+				addli.appendChild(addnum);
+				// addli.innerHTML=numre;
+				numul.appendChild(addli);
+				addli.style.height=numre.value+'px';
+				numre.value="";
+				if (numul.children.length>60) {
+					alert('您添加的元素已经超过60个');
+					numul.removeChild(addli);
+				}
+			}
+
+		};
+
+		//左侧出
+	    document.getElementById('left_out').onclick=function(){
+	    	numul.removeChild(numul.firstElementChild);
+	    };
+
+	    //右侧出
+	    document.getElementById('right_out').onclick=function(){
+	    	numul.removeChild(numul.lastElementChild);
+	    };
+
+	    //点击该元素并删除该元素
+	    numul.addEventListener("click",function(e){
+	        if(e.target.nodeName.toLowerCase()=="li"){
+	            numul.removeChild(e.target);
+	        }
+	    });//事件委托
+	    //从小到大排序，并删除原li。
+	     re_sort.onclick=function(){
+	     	//将输入的值转化为数组
+	     	var liItems=document.getElementsByTagName('li');
+	     	var newArr =[];
+	     	for (var i = 0; i < liItems.length; i++) {
+	     		newArr.push(liItems[i].innerHTML);
+	     	}
+	     	//将数组排序
+	     	newArr.sort( function (value1, value2) {
+	    		return value1 - value2;
+	    		  });
+
+	     	for (i = 0;i< newArr.length; i++) {
+	     		numul.removeChild(numul.firstElementChild);
+	     		// numul.removeChild(liItems[i]);这样移是错误
+	     		var addli =document.createElement('li');
+				var addnum= document.createTextNode(newArr[i]);
+				addli.appendChild(addnum);
+				numul.appendChild(addli);
+				addli.style.height=newArr[i]+'px';
+	     	}
+
+	     	//另一种转化数组的方法
+	     // 	var allli_arr=Array.prototype.slice.call(allli,0);
+	     // 	alert(allli_arr[0].innerHTML);
+	     // 	function sort_arr(allli_arr){
+	    	// return allli_arr.sort( function (value1, value2) {
+	    	// 	return value1.innerHTML - value2.innerHTML;
+	    	// 	  });
+	    	
+	   		//  }
+		};
+
+	};
+    </script>
+</body>
+</html>
